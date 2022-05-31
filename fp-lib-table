@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "pico-card")(type "KiCad")(uri "${KIPRJMOD}/pico-card.pretty")(options "")(descr ""))
+)

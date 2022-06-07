@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 37,
     "active_layer_preset": "",
     "auto_track_width": true,
     "hidden_nets": [],
@@ -62,11 +62,11 @@
       35,
       36
     ],
-    "visible_layers": "7fdffff_80000001",
+    "visible_layers": "ffdffff_ffffffff",
     "zone_display_mode": 1
   },
   "meta": {
-    "filename": "pico-card.kicad_prl",
+    "filename": "diva-card.kicad_prl",
     "version": 3
   },
   "project": {

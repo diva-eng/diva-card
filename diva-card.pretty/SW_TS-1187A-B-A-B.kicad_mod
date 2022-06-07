@@ -41,10 +41,10 @@
   (fp_line (start 2.55 -2.55) (end -2.55 -2.55) (layer "F.Fab") (width 0.127) (tstamp dbdbd47c-a2ea-4e3c-b234-ec7bc155bd42))
   (fp_circle (center -4.25 -1.875) (end -4.15 -1.875) (layer "F.Fab") (width 0.2) (fill none) (tstamp 13ce3404-a67e-47da-a38e-03e35fe11062))
   (pad "1" smd rect (at 3 -1.875) (size 1 0.75) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 0f1b3d5d-3bc9-4d8b-a4ce-5504858dbc2c))
-  (pad "1" smd rect (at -3 -1.875) (size 1 0.75) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8afe10e7-9e2f-4e1d-82e6-c0a8150cc2b4))
-  (pad "2" smd rect (at -3 1.875) (size 1 0.75) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 0ca6ecb1-cf1f-460a-99ea-122b2a12bbb1))
   (pad "2" smd rect (at 3 1.875) (size 1 0.75) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 32004c76-6802-4b5e-bdff-7318e1cb9b19))
-  (model "${KIPRJMOD}/pico-card.3dshapes/TS-1187A-B-A-B.step"
+  (pad "3" smd rect (at -3 -1.875) (size 1 0.75) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 8afe10e7-9e2f-4e1d-82e6-c0a8150cc2b4))
+  (pad "4" smd rect (at -3 1.875) (size 1 0.75) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 0ca6ecb1-cf1f-460a-99ea-122b2a12bbb1))
+  (model "${KIPRJMOD}/diva-card.3dshapes/TS-1187A-B-A-B.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))

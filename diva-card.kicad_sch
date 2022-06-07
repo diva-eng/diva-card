@@ -19,7 +19,6 @@
   (no_connect (at 165.735 106.045) (uuid 8ea37c06-8487-4508-82d1-ad5b4d88c4fd))
   (no_connect (at 165.735 138.43) (uuid 90992df0-f831-4f1b-a668-9b79608a2890))
   (no_connect (at 165.735 136.525) (uuid 90992df0-f831-4f1b-a668-9b79608a2891))
-  (no_connect (at 165.735 102.235) (uuid f2294d11-dc9e-476d-956c-1f1e9ad9b845))
   (no_connect (at 165.735 92.71) (uuid f2294d11-dc9e-476d-956c-1f1e9ad9b846))
   (no_connect (at 165.735 94.615) (uuid f2294d11-dc9e-476d-956c-1f1e9ad9b847))
   (no_connect (at 165.735 96.52) (uuid f2294d11-dc9e-476d-956c-1f1e9ad9b848))
@@ -49,6 +48,10 @@
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 200d9ee9-67e9-4d2b-b8c0-6ff51296e9cb)
   )
+  (wire (pts (xy 178.435 102.235) (xy 165.735 102.235))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 2025f117-39f0-4c0d-8d15-bab07c9d93b0)
+  )
   (wire (pts (xy 165.735 145.415) (xy 190.5 145.415))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 2628ebc8-93b9-4f63-bc89-42a3ece61c86)
@@ -76,6 +79,10 @@
   (wire (pts (xy 191.135 73.025) (xy 191.135 94.615))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 37805b94-1433-41c7-bf73-7da9ca829a12)
+  )
+  (wire (pts (xy 178.435 26.035) (xy 178.435 102.235))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 391c07dd-5153-46bc-a39b-729018c69c91)
   )
   (wire (pts (xy 184.785 83.185) (xy 184.785 106.045))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -144,6 +151,10 @@
   (wire (pts (xy 85.09 27.94) (xy 121.285 27.94))
     (stroke (width 0) (type default) (color 0 0 0 0))
     (uuid 7670fcf4-0834-4f32-95e8-d44d0b51d0eb)
+  )
+  (wire (pts (xy 153.67 26.035) (xy 178.435 26.035))
+    (stroke (width 0) (type default) (color 0 0 0 0))
+    (uuid 76aab118-3dba-405b-8c11-3a94c3c0c626)
   )
   (wire (pts (xy 165.735 81.28) (xy 186.69 81.28))
     (stroke (width 0) (type default) (color 0 0 0 0))
@@ -278,19 +289,23 @@
     (uuid fb776121-34af-4f21-b46f-4aaf94a7aeba)
   )
 
-  (label "I2C0_SDA" (at 163.83 42.545 180)
+  (label "~{USER_SW0}" (at 165.735 26.035 180)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 36a83b79-cda2-4e03-bab3-c6e5ba6e82ca)
+  )
+  (label "I2C0_SDA" (at 165.735 42.545 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 8a00b329-7687-4300-bae4-7fa4e943eab4)
   )
-  (label "I2C0_SCL" (at 163.83 40.64 180)
+  (label "I2C0_SCL" (at 165.735 40.64 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid d84ac262-ba73-492f-9aa7-cdd1f5bde58d)
   )
-  (label "LED_DI" (at 163.83 29.845 180)
+  (label "LED_DI" (at 165.735 29.845 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid e575df0f-0506-42eb-9c3b-93ad32bf6411)
   )
-  (label "USER_LED" (at 163.83 32.385 180)
+  (label "USER_LED" (at 165.735 32.385 180)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid f5dea0c5-0204-48c8-bc42-6c7cf9d91e0b)
   )
@@ -440,6 +455,10 @@
     (pin "LED_DI" input (at 153.67 29.845 0)
       (effects (font (size 1.27 1.27)) (justify right))
       (uuid 7240840b-ffdc-46a3-aa8f-2f2204207d3b)
+    )
+    (pin "~{USER_SW0}" input (at 153.67 26.035 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid dc74c452-a14d-4f8a-a5c3-b20507315bba)
     )
   )
 
@@ -971,127 +990,127 @@
       (reference "J2") (unit 1) (value "USB_C_Receptacle_USB2.0") (footprint "Connector_USB:USB_C_Receptacle_Palconn_UTC16-G")
     )
     (path "/c6be3312-b21a-44a1-9087-4385ef7236e6/ef80fb37-c200-4072-aec6-be07b8b1fa1b"
-      (reference "J3") (unit 1) (value "Conn_02x21_Odd_Even") (footprint "pico-card:PICO_CARD_EDGE_21")
+      (reference "J3") (unit 1) (value "Conn_02x21_Odd_Even") (footprint "Diva-Card:PICO_CARD_EDGE_21")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/6b96fab8-1c61-4707-b5b1-d00241b0fc46"
-      (reference "L1") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/8d75b3e4-384b-4424-ba24-5872431aceb1"
+      (reference "L1") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/3bcf5b0e-5e71-4a2b-a2bb-575bfdf926cd"
-      (reference "L2") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/6e885f05-2112-434f-8fad-33ced81cb1a2"
+      (reference "L2") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/66e010f6-4dbd-4e8e-a932-49ee3bfb67a2"
-      (reference "L3") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/03037091-5fda-4c5c-aba7-8e9c4527d984"
+      (reference "L3") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/abb49463-1205-4407-989a-9dcc35f908bc"
-      (reference "L4") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/5458743c-a1ea-4302-a48a-b72604e95bed"
+      (reference "L4") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/8304664e-7068-48a9-b29c-a7b7971fd3ee"
-      (reference "L5") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/33ca4e93-7a11-471f-8f8f-461992920d94"
+      (reference "L5") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/1e318c1e-ee0b-44a4-9c87-17674370230a"
-      (reference "L6") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/1bdca8a5-ba7f-4930-9ab0-22a13fb53267"
+      (reference "L6") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/f2b9e873-2d14-463a-a04e-aaf6eecdf2d6"
-      (reference "L7") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/5215d3ba-9540-44ef-bcc3-0cb0222c21fa"
+      (reference "L7") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/295a5e85-4517-4b1c-8510-89afbb84711c"
-      (reference "L8") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/44e43717-f8ec-4b7c-9596-eff87c7138c3"
+      (reference "L8") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/8bf6f82c-d844-494c-a82f-c9c15f1852da"
-      (reference "L9") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/f23b0dfb-d0d7-4683-bc4e-d88dc7c2156e"
+      (reference "L9") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/724eef72-20f5-4121-82a6-3d82100cc7b1"
-      (reference "L10") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/39468934-6e0a-4e29-a207-425df1cbd4ff"
+      (reference "L10") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/e84f786e-c380-473e-a405-85f1ed17e8f3"
-      (reference "L11") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/08ff78fd-9902-4f65-a72a-47012012f8e3"
+      (reference "L11") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/8fc82938-32d9-4497-ac13-d77585cf996f"
-      (reference "L12") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/b056af27-6376-44e1-8a96-62a89795d438"
+      (reference "L12") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/19dd985d-c139-4e88-ae76-70877527b3fd"
-      (reference "L13") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/89330e85-77fa-4846-a793-b3bdd0c589e5"
+      (reference "L13") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/167b1487-b8c7-492e-a140-a0bd1ba081af"
-      (reference "L14") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/fa9b5688-6541-4a58-b10a-5f2f1d47d20a"
+      (reference "L14") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/ad794252-ccbb-4fc2-83dd-81162d5b5c75"
-      (reference "L15") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/db7d91fa-9bb3-4b5c-b2f8-454e0f5beb4f"
+      (reference "L15") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/7f3f26ae-1d9b-43d6-9681-aacf649479af"
-      (reference "L16") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/6566433b-e210-4da1-9384-150494103343"
+      (reference "L16") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/c3d81fc1-6ca3-4ba3-8a2b-c114dac4a0db"
-      (reference "L17") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/7e985294-ce64-4b1a-8d8d-89dd00f4ef8e"
+      (reference "L17") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/22e4f8a5-b49c-4137-b63f-41e70e0f266d"
-      (reference "L18") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/d9c7abc7-3b5c-4788-abec-bfe7183ab37c"
+      (reference "L18") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/51d02f77-0dfc-415d-a403-080dc5fdd89d"
-      (reference "L19") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/f0f6e1da-3acd-42ad-afea-ce2a96936865"
+      (reference "L19") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/ee2efb1a-9ab2-4dfd-b60a-ea59080a05f5"
-      (reference "L20") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/9b78e193-afa8-4a54-a281-e21f22be7a8e"
+      (reference "L20") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/4c583500-41c7-430c-9d3a-e7a8fcd5b218"
-      (reference "L21") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/ece3c401-9427-4598-bec8-c6d5ddbf05eb"
+      (reference "L21") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/d88f7158-3d2e-4063-b24c-e1b22617e3f4"
-      (reference "L22") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/43577a2b-107a-4da4-acc9-ca1313e425f6"
+      (reference "L22") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/4d468a5e-e878-4ac8-85b0-7484f9ed4735"
-      (reference "L23") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/c34083fd-850b-4edf-932e-a4949030386f"
+      (reference "L23") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/aa35b5db-3293-41f2-bf75-01a0cbb878d8"
-      (reference "L24") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/7716dce6-05d8-4ee1-b1a8-4d6a5fe5a8ac"
+      (reference "L24") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/b8308fdd-4607-49ad-9b12-17fca089a33d"
-      (reference "L25") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/a0abfd13-b88d-45c3-8635-5322737a2436"
+      (reference "L25") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/524df90a-91de-4701-920e-60f401e6736e"
-      (reference "L26") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/b850163e-3c40-4a13-9d49-1bd254221418"
+      (reference "L26") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/665dbe29-089a-45a3-8840-e8e47bc622be"
-      (reference "L27") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/e8f24daf-a933-4862-83dd-230bc4e475ef"
+      (reference "L27") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/0e4a8655-4e31-433f-b191-b676de25ae25"
-      (reference "L28") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/a09cd584-7c29-421e-8f7e-c737e156d99f"
+      (reference "L28") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/c40bddce-b528-4331-98a5-cea2da4f0a05"
-      (reference "L29") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/7547eb75-748d-491b-a7be-5d0c9dad410a"
+      (reference "L29") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/206fc262-88e9-4ef5-a109-f2c9f16f9024"
-      (reference "L30") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/a096b0cc-f6af-412b-a80b-a822ab13d95e"
+      (reference "L30") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/99cc4c8d-e0de-4011-9e87-312fd043041e"
-      (reference "L31") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/7e6131c8-eb58-403d-bd82-17b02b592b70"
+      (reference "L31") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/3de65140-53b2-42e9-9cec-28a6961a002b"
-      (reference "L32") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/cb8ca326-3764-4c42-b420-d17a24d12f63"
+      (reference "L32") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/46c82d5d-c84b-47b9-a2f6-4abbc5cd36ea"
-      (reference "L33") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/52b732d6-d873-4845-abe0-2c295d99c0d3"
+      (reference "L33") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/0053712d-956f-473f-a15b-6d9a2d54389d"
-      (reference "L34") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/45d529e4-69b9-4b29-9a21-34c76234184d"
+      (reference "L34") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/7306c91e-697b-49f2-8947-c0b289d68025"
-      (reference "L35") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/5817433b-011f-45fd-9e9f-299799ffd0a7"
+      (reference "L35") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/d3959433-0c31-4f88-b89c-c2a8dcdb4253"
-      (reference "L36") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/f63e92fd-cf90-43fe-b415-bfd5b5f1b03e"
+      (reference "L36") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/bdcf6fc3-097c-4397-8b9e-c6ae97606780"
-      (reference "L37") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/f12adb8e-46c3-44a0-b10a-cabc9d7411d1"
+      (reference "L37") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/f4f35e6d-aaef-4255-a0d4-ccd0bee29daa"
-      (reference "L38") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/04335a11-7116-4c57-a370-64f72c3a7ca1"
+      (reference "L38") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/1617a928-2ba7-4f02-bd2b-f755efa0ebd5"
-      (reference "L39") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/cf2d27b2-f2ad-4c83-9d49-8955513753b2"
+      (reference "L39") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/c51e47a5-2525-4923-9f4d-f72ecd7795f7"
-      (reference "L40") (unit 1) (value "WS2812C") (footprint "pico-card:WS2812C-2020")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/73f4c121-ed2a-44bb-a8d8-e541c802006f"
+      (reference "L40") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
     )
     (path "/6ea7b2ea-28e4-4ca5-9b05-9fcac11f3492/19b3d373-c0f0-4de3-b1b3-1aa76cd3c3c1"
       (reference "R1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -1130,10 +1149,10 @@
       (reference "R12") (unit 1) (value "5k1") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/d2aee038-377d-409f-acc7-eec4c7ef9061"
-      (reference "SW1") (unit 1) (value "SW_Push") (footprint "pico-card:SW_TS-1187A-B-A-B")
+      (reference "SW1") (unit 1) (value "SW_Push") (footprint "Diva-Card:SW_TS-1187A-B-A-B")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/4a74d3aa-cefe-4342-b173-9857f8da9dbe"
-      (reference "SW2") (unit 1) (value "SW_Push") (footprint "pico-card:SW_TS-1187A-B-A-B")
+      (reference "SW2") (unit 1) (value "SW_Push") (footprint "Diva-Card:SW_TS-1187A-B-A-B")
     )
     (path "/6ea7b2ea-28e4-4ca5-9b05-9fcac11f3492/372ac643-95c8-474d-a22d-d937aebd3d35"
       (reference "U1") (unit 1) (value "AP2112K-3.3") (footprint "Package_TO_SOT_SMD:SOT-23-5")
@@ -1144,8 +1163,8 @@
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/95af70ab-176e-4037-bfd1-7cac2b3f7162"
       (reference "U3") (unit 1) (value "W25Q128JVS") (footprint "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm")
     )
-    (path "/ef153473-0ff6-41c4-b5ea-5e2451c67924/6c2b51a7-6db6-4df8-8252-6134409b2515"
-      (reference "U4") (unit 1) (value "RP2040") (footprint "pico-card:RP2040-QFN-56")
+    (path "/ef153473-0ff6-41c4-b5ea-5e2451c67924/e6ef3bbd-4d4c-45a8-a4dc-a9ac1b04ef84"
+      (reference "U4") (unit 1) (value "RP2040") (footprint "Diva-Card:RP2040-QFN-56")
     )
     (path "/ef153473-0ff6-41c4-b5ea-5e2451c67924/a31ab699-1c83-4eac-a2d4-8ac2fa73e7bf"
       (reference "Y1") (unit 1) (value "Crystal_GND24") (footprint "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm")

@@ -1,3 +1,3 @@
 (sym_lib_table
-  (lib (name "pico-card")(type "KiCad")(uri "${KIPRJMOD}/pico-card.kicad_sym")(options "")(descr ""))
+  (lib (name "Diva-Card")(type "KiCad")(uri "${KIPRJMOD}/diva-card.kicad_sym")(options "")(descr ""))
 )

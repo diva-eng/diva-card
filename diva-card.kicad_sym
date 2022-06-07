@@ -264,7 +264,7 @@
     (property "Value" "WS2812C" (id 1) (at 4.318 -7.112 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (id 2) (at 0 0 0)
+    (property "Footprint" "Diva-Card:WS2812C-2020" (id 2) (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 0 0 0)

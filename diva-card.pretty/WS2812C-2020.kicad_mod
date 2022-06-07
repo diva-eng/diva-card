@@ -41,7 +41,7 @@
   (pad "2" smd rect (at 1.1049 -0.499999) (size 0.9144 0.6096) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 34dc1e04-4a84-474d-ac7f-9d2bfa5b8c4a))
   (pad "3" smd rect (at -1.1049 -0.499999) (size 0.9144 0.6096) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 52a0c8af-68a9-4b62-8033-a991aebe915a))
   (pad "4" smd rect (at -1.1049 0.499999) (size 0.9144 0.6096) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 436d572f-7183-4b2d-97f7-2bd15e877158))
-  (model "${KIPRJMOD}/pico-card.3dshapes/WS2812C-2020.STEP"
+  (model "${KIPRJMOD}/diva-card.3dshapes/WS2812C-2020.STEP"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz -90 0 0))

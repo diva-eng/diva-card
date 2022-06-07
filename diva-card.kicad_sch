@@ -978,7 +978,7 @@
       (reference "C22") (unit 1) (value "22p") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/ca13edc2-6634-4c38-af2a-c13c8e0045a7"
-      (reference "D1") (unit 1) (value "RED") (footprint "LED_SMD:LED_0402_1005Metric")
+      (reference "D1") (unit 1) (value "EMERALD") (footprint "LED_SMD:LED_0402_1005Metric")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/653e8ca2-4bb6-42df-8ffd-c3383b938f6c"
       (reference "D2") (unit 1) (value "WHITE") (footprint "LED_SMD:LED_0402_1005Metric")

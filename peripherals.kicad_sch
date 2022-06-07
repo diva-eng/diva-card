@@ -8333,7 +8333,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid ca13edc2-6634-4c38-af2a-c13c8e0045a7)
     (property "Reference" "D1" (id 0) (at 34.6075 162.56 0))
-    (property "Value" "RED" (id 1) (at 34.6075 165.1 0))
+    (property "Value" "EMERALD" (id 1) (at 34.6075 165.1 0))
     (property "Footprint" "LED_SMD:LED_0402_1005Metric" (id 2) (at 33.02 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )

@@ -911,6 +911,12 @@
     (path "/c6be3312-b21a-44a1-9087-4385ef7236e6/97323299-c695-4c1e-a446-5ef647fb9af6"
       (reference "#PWR0107") (unit 1) (value "+5V") (footprint "")
     )
+    (path "/c6be3312-b21a-44a1-9087-4385ef7236e6/4164492f-2c57-4d1f-a3be-9f4d3d5b78fe"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/c6be3312-b21a-44a1-9087-4385ef7236e6/a1928a95-ff0b-42bc-9da3-5b5aea83bedf"
+      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+    )
     (path "/6ea7b2ea-28e4-4ca5-9b05-9fcac11f3492/05f879d7-042f-43bd-bcde-728faaa5380d"
       (reference "C1") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
@@ -991,6 +997,9 @@
     )
     (path "/c6be3312-b21a-44a1-9087-4385ef7236e6/ef80fb37-c200-4072-aec6-be07b8b1fa1b"
       (reference "J3") (unit 1) (value "Conn_02x21_Odd_Even") (footprint "Diva-Card:PICO_CARD_EDGE_21")
+    )
+    (path "/c6be3312-b21a-44a1-9087-4385ef7236e6/e44f783f-40cd-47c5-92be-9be34ec24857"
+      (reference "J?") (unit 1) (value "Conn_02x05_Odd_Even") (footprint "Connector:Tag-Connect_TC2050-IDC-NL_2x05_P1.27mm_Vertical")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/8d75b3e4-384b-4424-ba24-5872431aceb1"
       (reference "L1") (unit 1) (value "WS2812C") (footprint "Diva-Card:WS2812C-2020")
@@ -1125,7 +1134,7 @@
       (reference "R4") (unit 1) (value "1k5") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/9e524dfe-0435-4f91-b4f5-4736c1613521"
-      (reference "R5") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R5") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/01e4fd07-5b31-43d0-a2bd-20174657f8a0"
       (reference "R6") (unit 1) (value "1k5") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -1157,11 +1166,11 @@
     (path "/6ea7b2ea-28e4-4ca5-9b05-9fcac11f3492/372ac643-95c8-474d-a22d-d937aebd3d35"
       (reference "U1") (unit 1) (value "AP2112K-3.3") (footprint "Package_TO_SOT_SMD:SOT-23-5")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/4f2614f6-8304-446b-8da8-aae124403bd1"
-      (reference "U2") (unit 1) (value "ATECC608A-SSHDA") (footprint "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm")
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/5c0e53f3-830a-40e6-a75e-f34b2406f70c"
+      (reference "U2") (unit 1) (value "ATECC608A-MAHDA") (footprint "Package_DFN_QFN:DFN-8-1EP_3x2mm_P0.5mm_EP1.3x1.5mm")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/95af70ab-176e-4037-bfd1-7cac2b3f7162"
-      (reference "U3") (unit 1) (value "W25Q128JVS") (footprint "Package_SO:SOIC-8_5.23x5.23mm_P1.27mm")
+      (reference "U3") (unit 1) (value "W25Q128XXX") (footprint "Diva-Card:W25Q128JVPIQ TR")
     )
     (path "/ef153473-0ff6-41c4-b5ea-5e2451c67924/e6ef3bbd-4d4c-45a8-a4dc-a9ac1b04ef84"
       (reference "U4") (unit 1) (value "RP2040") (footprint "Diva-Card:RP2040-QFN-56")

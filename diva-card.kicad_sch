@@ -915,9 +915,6 @@
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/d30f1736-54d5-4589-9bc3-8553094df54c"
       (reference "#PWR081") (unit 1) (value "GND") (footprint "")
     )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/ce763186-a7a4-471a-bffe-2736cad76dfd"
-      (reference "#PWR082") (unit 1) (value "GND") (footprint "")
-    )
     (path "/c6be3312-b21a-44a1-9087-4385ef7236e6/f637fcd5-98e3-40f6-8691-ff60029952aa"
       (reference "#PWR083") (unit 1) (value "GND") (footprint "")
     )
@@ -1013,9 +1010,6 @@
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/d20dad42-c1e6-469c-8421-86121888159a"
       (reference "C24") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
-    )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/868d1c2e-770e-4c1c-b35d-fe3e59dd7f8e"
-      (reference "C25") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0402_1005Metric")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/ca13edc2-6634-4c38-af2a-c13c8e0045a7"
       (reference "D1") (unit 1) (value "EMERALD") (footprint "LED_SMD:LED_0402_1005Metric")
@@ -1162,16 +1156,13 @@
       (reference "R1") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/bd200e94-8533-4538-b862-2962efd6c607"
-      (reference "R2") (unit 1) (value "5k") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R2") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/70992891-6810-45e6-b3f2-ddc0961a6aa3"
       (reference "R3") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/859d44fb-5271-42f7-9bc1-3e034072f842"
       (reference "R4") (unit 1) (value "1k5") (footprint "Resistor_SMD:R_0402_1005Metric")
-    )
-    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/9e524dfe-0435-4f91-b4f5-4736c1613521"
-      (reference "R5") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/01e4fd07-5b31-43d0-a2bd-20174657f8a0"
       (reference "R6") (unit 1) (value "1k5") (footprint "Resistor_SMD:R_0402_1005Metric")
@@ -1186,13 +1177,22 @@
       (reference "R9") (unit 1) (value "10K") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/ef153473-0ff6-41c4-b5ea-5e2451c67924/53480cb7-b5af-44bf-aa2c-e7813c355eb5"
-      (reference "R10") (unit 1) (value "DNF") (footprint "Resistor_SMD:R_0402_1005Metric")
+      (reference "R10") (unit 1) (value "100") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/c6be3312-b21a-44a1-9087-4385ef7236e6/93f7bdfa-a3fb-4f0e-b9cd-e6f0719daa61"
       (reference "R11") (unit 1) (value "5k1") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/c6be3312-b21a-44a1-9087-4385ef7236e6/26dea7ba-8400-436f-a3e9-86052cd1fc68"
       (reference "R12") (unit 1) (value "5k1") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/97924b24-3681-49f5-8a68-9075e144e91c"
+      (reference "R13") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/f6e78214-f136-42fd-a325-ecf2c38559aa"
+      (reference "R14") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0402_1005Metric")
+    )
+    (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/4765b8b7-90b7-4e1d-a587-932a7f4e5cc1"
+      (reference "R15") (unit 1) (value "1K") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
     (path "/edc51190-cad1-4c5e-beb6-0b752ab7f2ca/d2aee038-377d-409f-acc7-eec4c7ef9061"
       (reference "SW1") (unit 1) (value "USER") (footprint "Diva-Card:SW_TS-1187A-B-A-B")

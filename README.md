@@ -13,4 +13,4 @@ Raspberry RP2040 based development board/card with builtin LED matrix
 * 1 user LED
 * 13 user IO
 * SWD tag connector
-* Edge connector for IO/USB/Power
+* Edge connector for IO/Power
